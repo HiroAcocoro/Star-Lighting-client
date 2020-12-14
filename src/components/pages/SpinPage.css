@@ -1,0 +1,75 @@
+.WheelContainer {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.WheelMarker {
+    height: 20%;
+    width: 20%;
+    -webkit-filter: drop-shadow(3px 1px 8px #222);
+    filter: drop-shadow(3px 1px 8px #222);
+    position: relative;
+    top: 8vh;
+    z-index: 2;
+}
+
+.WheelImg {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.btnContainer {
+    margin-top: 30%;
+}
+
+@media screen and (max-width: 6000px) {
+    .WheelMarker {
+        height: 18%;
+        width: 18%;
+        top: 10vh;
+    }
+    .WheelContainer {
+        height: 30%;
+        width: 39%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .WheelMarker {
+        height: 18%;
+        width: 18%;
+        top: 10vh;
+    }
+    .WheelContainer {
+        height: 30%;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .WheelMarker {
+        top: 10vh;
+    }
+    .WheelContainer {
+        height: 50%;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .WheelMarker {
+        top: 8vh;
+    }
+    .WheelContainer {
+        height: 60%;
+        width: 100%;
+    }
+}
